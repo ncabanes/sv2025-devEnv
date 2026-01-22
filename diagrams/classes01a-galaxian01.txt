@@ -1,0 +1,19 @@
+Nave
+- Acciones: Mover izquierda, mover derecha, disparar
+- Datos: x, y, vidas
+
+Enemigo
+- Acciones: atacar, moverse, disparar
+- Datos: x, y
+
+Bloque de enemigos:
+- Acciones: mover
+- Datos: enemigos[]
+
+Marcador
+- Acciones: mostrar, incrementar puntos
+- Datos: puntos
+
+Nivel:
+- Acciones: avanzar
+- Datos: número
