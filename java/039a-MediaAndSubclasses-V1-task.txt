@@ -1,0 +1,12 @@
+Create a class called "Media" that allows you to store information about a generic multimedia file. It will have the following attributes: author, size (in KB), and format (for example, MPEG4). You must also create the conventional setters and getters to read or change these attributes. Create a constructor that assigns a value to the three attributes when an object is created, as well as a second constructor that only specifies the size and format, leaving the author with the value "(Unknown)".  Its ToString method should return the author, size, and format in a single line of text.
+
+(To be continued:)
+
+Create a class called "Image" that inherits from "Media" and adds the attributes "width" (for example, 1600) and "height", with their corresponding Set and Get methods, as well as constructor. Its ToString method will add the width and height to the ToString method of the base class.
+
+Create a class "Sound," also based on "Media," with the attributes "stereo" (boolean), "kbps" (e.g., 192), and "duration" (in seconds), its setters and getters, and a constructor. Its ToString method will be based on that of the superclass.
+
+Create a class "Video," also inheriting from "Media," which will be extended with the attributes "codec" (e.g., H.264), "width" (e.g., 1600), "height," and "duration" (in seconds), its setters and getters, and a suitable constructor. Its ToString method will be based on that of the base class.
+
+Finally, create a class "MediaTest" with a test program that creates at least one element of each of the above types, as well as an array with at least two elements of different types, and then displays the data for all of them on the screen.
+
