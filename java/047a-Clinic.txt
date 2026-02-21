@@ -1,0 +1,24 @@
+We want to create a framework for a computer system for a small medical clinic.
+
+To do this, we will create a "Clinic" class, which will encompass all the others. The system will be designed to manage:
+
+- Doctors, nurses, and patients. For each of them, their first and last names will be recorded (in a single field, in the format "Last Name, First Name"), along with a numeric code. Each class will have a constructor that allows specifying these two parameters, as well as getters and setters for each of them. In the case of doctors, there will also be a "specialty" (for example, "Ophthalmology"), along with its Getter and Setter functions, and an additional constructor that allows specifying the specialty as well (in the case of the other constructor, which does not specify a specialty, it will be assumed to be "General Medicine"). For all of them, a "toString" method must be created that displays the code, last and first name, and (in the case of doctors) specialty, separated by commas. Patients must implement "Comparable", so that they can be sorted on their name.
+
+- Visits, which can be either Scheduled or Emergency. For each visit, the patient seen and the attending physician must be recorded (since a nurse will not always be required, this detail will be left for version 2.0). It will also be necessary to record the date and time (as a text string), the reason for the visit, and the diagnosis. Additionally, for emergencies, a Boolean value will be recorded indicating whether a follow-up visit is necessary. All of this data must be specifyable in the constructor, and there will be Getters and Setters (or properties) for them. The "toString" method for a visit will return the patient's name, doctor's name, date, reason for visit, and diagnosis, separated by hyphens. If the visit is scheduled, this information will be preceded by "Scheduled -", and if it's an emergency, it will be preceded by "Emergency -". The "toString" method for an emergency that has a scheduled follow-up visit must end with "(P)".
+
+The program body will be in the "Run" method of the "Clinic" class. This body will create two predefined doctors and one nurse, and an initially empty array of patients. It will display five options:
+
+- Add a patient (requesting their information via the console)
+- Search for patients, using part of their first or last name.
+
+- Add a visit (requesting the visit type, patient code, doctor code, reason for visit, and diagnosis - the date will not be requested, but rather the current time will be used -; if it's an emergency, it will also ask if a follow-up visit has been scheduled).
+
+- View all visits.
+
+- Exit
+
+This same "Clinic" class will also contain "main".
+
+Since we don't know how to handle text files, this first provisional version will lose its data each time a session ends.
+
+Remember to avoid repetitive code as much as possible, reusing constructors or methods when appropriate.
