@@ -31,7 +31,6 @@ public class RectangleToFile5 {
             String line = null;
             while ((line = inputFile.readLine()) != null) {
                 System.out.println(line);
-                line = inputFile.readLine();
             }
         }
         catch (FileNotFoundException fnfe) {
