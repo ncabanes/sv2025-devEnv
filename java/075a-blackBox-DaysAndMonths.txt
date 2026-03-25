@@ -1,0 +1,5 @@
+Let's test a function that gets as input the day of a month (integer between 1 and 31) and a month number (integer between 1 and 12) and returns how many days are left in this month (an integer between 1 and 30, depending on the month).
+
+int getDaysLeft(int dayOfMonth, int monthNumber) { ... }
+
+Think of the possible test cases to cover all the limit values
